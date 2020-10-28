@@ -1,0 +1,14 @@
+digraph architecture {
+  label="Offline Debugging"
+
+  source_language -> source_runtime
+  source_runtime -> output
+  source_runtime -> scope_language
+  scope_language -> disk
+
+  disk_2 [label="disk later in time"]
+  scope [label="scope with scrubbing"]
+  scope_language_2 [label="scope_language of full execution"]
+  disk_2 -> scope_language_2
+  scope_language_2 -> scope
+}

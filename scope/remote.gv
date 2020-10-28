@@ -1,0 +1,12 @@
+digraph architecture {
+  label="Remote Observation"
+
+  source_language -> source_runtime
+  source_runtime -> output
+  source_runtime -> scope_language
+  scope_language -> network
+
+  scope_language_2 [label="scope_language"]
+  network -> scope_language_2
+  scope_language_2 -> scope
+}

@@ -1,0 +1,8 @@
+digraph architecture {
+  label="Online Observation"
+
+  source_language -> source_runtime
+  source_runtime -> output
+  source_runtime -> scope_language
+  scope_language -> scope
+}
