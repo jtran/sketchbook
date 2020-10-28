@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Vision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #fff;
+  color: #444;
+  font-family: courier, courier new, monospace;
+  font-size: 14px;
+}
+body {
+  margin: 0;
+  padding: 10px;
+}
+button {
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+}
+#status {
+  margin: 10px;
+}
+#interpreter {
+  position: relative;
+  display: flex;
+}
+.arrows {
+  position: absolute;
+}
+.level {
+  margin-left: 50px;
+}
+.level.first {
+  margin-left: 0;
+}
+.entry {
+  display: flex;
+}
+.entry-key {
+  margin: 10px 0 10px 10px;
+  /* Padding on top to align with node border and padding. */
+  padding: 6px 0 0 0;
+}
+.entry-value {
+  margin: 10px;
+}
+.cell, .node {
+  min-width: 10px;
+  min-height: 10px;
+}
+.cell {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.cell.map-key {
+  border: 0;
+}
+.map {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.map-header {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.map-key {
+  padding-top: 6px; /* Increase to align with value since it has a border. */
+  text-align: right;
+}
+.entry-key, .entry-value, .node {
+  position: relative;
+  opacity: 0;
+  transition: left 0.5s ease-out, top 0.5s ease-out, opacity 0.5s ease-out;
+}
+.index-into {
+  position: absolute; /* override node */
+  text-align: right;
+}
+#controls {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+}
+#scrubber {
+  width: 100%;
+  max-width: 300px;
+}
+  </style>
+</head>
+<body>
+
+  <div>
+    <button id='advance'>Advance</button>
+    <button id='advance-ten'>Advance 10</button>
+    <button id='run-all'>Run All</button>
+  </div>
+  <div id='status'>
+    <div>Current Op: <span id='last-op'></span></div>
+    <div>Next Op: <span id='next-op'></span></div>
+  </div>
+  <div id='interpreter'>
+    <svg class='arrows' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>
+      <g fill='none' stroke='#ccc' stroke-width='2'>
+      </g>
+    </svg>
+  </div>
+  <div id='controls'>
+    <input id='scrubber' type='range' min='0' max='0' disabled>
+  </div>
+
+  <script type="module" src="main.js"></script>
+
+</body>
+</html>

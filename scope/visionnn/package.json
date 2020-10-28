@@ -1,0 +1,21 @@
+{
+  "name": "vision",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "app": "coffee -p app.coffee | node --input-type=module",
+    "build": "coffee -cbo lib src",
+    "start": "npm run build && npm run app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "coffee -wcbo lib src"
+  },
+  "author": "Jonathan Tran",
+  "dependencies": {
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "coffeescript": "^2.5.1"
+  }
+}
