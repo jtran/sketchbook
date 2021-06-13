@@ -1,2 +1,2 @@
-Copyright 2020 Jonathan Tran
+Copyright 2020-2021 Jonathan Tran
 All rights reserved.
