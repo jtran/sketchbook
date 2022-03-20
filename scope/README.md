@@ -30,12 +30,12 @@ Since all the best developers I know are very opinionated about the programming 
 
 In the same way that JSON is the lowest common denominator across languages for representing a data structure, at a point in time, Visionnn's protocol uses simple operations that are common across languages for representing state change, throughout the run of a program.
 
-Instead of trying to create an entirely new programming language, runtime, and IDE, Visionnn's goal isn't to reinvent the wheel or try to convince people to switch from the tools they're already using.  Visionnn is designed to do one thing well -- convey runtime state -- and that can augment whatever you're already doing.
+Instead of trying to create an entirely new programming language, runtime, and IDE, Visionnn's goal isn't to reinvent the wheel or try to convince people to switch from the tools they're already using.  Visionnn is designed to do one thing well -- convey runtime state -- that can augment whatever you're already doing.
 
 Visionnn enables you to:
 
 - Increase your productivity by freeing your mind from simulating the computer
-- Communicate how complex processes work more effectively than co-workers by using video animations
+- Communicate how complex processes work more effectively than co-workers by using interactive animations
 - See how data flows through a system, even when there's no documentation
 - Reveal bugs and inefficiencies in ways that log files can't
 - Find the code that causes the effects you want in an unfamiliar codebase
